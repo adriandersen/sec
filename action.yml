@@ -1,6 +1,8 @@
 name: 'Security Compliance Check'
 description: 'Makes sure things are secure before allowing merge'
-
+inputs:
+  token:
+    default: ${{ secrets.GITHUB_TOKEN }}
 runs:
   using: 'node12'
   main: 'index.js'
