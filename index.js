@@ -1,8 +1,8 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 
-token = core.getInput("token");
+let octokit = github.getOctokit(github.token);
 
 const token = async () => {
-  github.getOctokit(token);
+  console.log(octokit.rest.users.list);
 };
