@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Dependabot check
         id: dependabot
-        uses: adriandersen/sec@v0.1
+        uses: ./
