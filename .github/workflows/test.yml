@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Check that security is all good
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
       - name: Dependabot check
         id: dependabot
         uses: ./
